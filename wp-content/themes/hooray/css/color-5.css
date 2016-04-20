@@ -1,0 +1,100 @@
+body { background: #dd6e98 url("../images/bg.jpg") no-repeat fixed center top; }
+.tagcloud a:hover,
+.flexslider ul.flex-direction-nav li a:hover { background-color: #272727; }
+a:hover { color: #2e2e2e; }
+
+
+.blog-v1 article,
+.widget-title.box-title,
+.widget-title.box-title h2 { color: #2e2e2e; }
+.blog-v1 article .cat-links,
+.blog-v1 article .article-formats,
+.divider-colors,
+.top-search,
+.pagenavi span.pagenavi-current,
+a.more-link,
+button,
+.btn-link,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+span.bd-criteria-percentage,
+.slider-flex ol.flex-control-paging li a.flex-active,
+.folio-cat a,
+.folio-tag a,
+#folio-main ul#filters li a.selected,
+#page-title,
+.gotop
+
+{ background-color: #ea9eb6; }
+.comment-reply-link,
+.comment-reply-link:link,
+.comment-reply-link:active { color: #ea9eb6; }
+
+.masonry-more-link {  color: #ea9eb6; }
+
+.pagenavi span.pagenavi-current,
+.pagenavi a:hover { border-color: transparent; }
+.pagenavi a:hover,
+.blog-v1 article .entry-meta a,
+.widget-title.box-title a,
+ul.tabs_nav li.active a,
+ul.tabs_nav li a:hover,
+.widget.bd-login .login_user .bio-author-desc a,
+.widget a:hover,
+.bd-tweets ul.tweet_list li.twitter-item a { color: #272727; }
+.single-post-related h2,
+.page-title,
+.page-title a,
+.tagcloud a:hover,
+.logo-name,
+.logo-name a,
+.sitemap_content,
+.sitemap_content a,
+.timeline-title,
+.timeline-title a,
+.timeline-list,
+.timeline-list a,
+.timeline-list .timeline-item .timeline-date span,
+.post-sharing-box .title{ color: #FFF; }
+.copyright a:hover { text-decoration: underline; }
+.folio-info ul li {
+    border-color: transparent;
+    border-color: rgba( 255,255,255, 0.2 )
+}
+.folio-container.loading div#loading { background: url("../images/b-loader.gif") no-repeat center; }
+
+
+.primary-menu ul#menu-primary > li.current-menu-parent i,
+.primary-menu ul#menu-primary > li.current-menu-ancestor i,
+.primary-menu ul#menu-primary > li.current-menu-item i,
+.primary-menu ul#menu-primary > li.current_page_item i,
+.primary-menu ul#menu-primary > li.current-menu-parent > a,
+.primary-menu ul#menu-primary > li.current-menu-ancestor > a,
+.primary-menu ul#menu-primary > li.current-menu-item > a,
+.primary-menu ul#menu-primary > li.current_page_item > a { color: #ea9eb6; }
+.primary-menu ul#menu-primary > li:hover > a { color: #ea9eb6; }
+.primary-menu ul#menu-primary li.bd_menu_item ul.sub-menu li:hover > ul.sub-menu,
+.primary-menu ul#menu-primary li.bd_mega_menu:hover > ul.bd_mega.sub-menu,
+.primary-menu ul#menu-primary li.bd_menu_item:hover > ul.sub-menu,
+.primary-menu ul#menu-primary .sub_cats_posts { border-top: 3px solid #ea9eb6; }
+.top-search { background-color: #ea9eb6; }
+.new-box,
+.widget { border-top-color: #ea9eb6; }
+.search-mobile button.search-button { background-color: #ea9eb6; }
+::selection { background: #ea9eb6; }
+
+#reading-position-indicator{background: #ea9eb6;}
+#bdCheckAlso{border-top-color: #ea9eb6;}
+
+.woocommerce .product .onsale, .woocommerce .product a.button:hover, .woocommerce .product #respond input#submit:hover, .woocommerce .checkout input#place_order:hover, .woocommerce .woocommerce.widget .button:hover, .single-product .product .summary .cart .button:hover, .woocommerce-cart .woocommerce table.cart .button:hover, .woocommerce-cart .woocommerce .shipping-calculator-form .button:hover, .woocommerce .woocommerce-message .button:hover, .woocommerce .woocommerce-error .button:hover, .woocommerce .woocommerce-info .button:hover, .woocommerce-checkout .woocommerce input.button:hover, .woocommerce-page .woocommerce a.button:hover, .woocommerce-account div.woocommerce .button:hover, .woocommerce.widget .ui-slider .ui-slider-handle, .woocommerce.widget.widget_layered_nav_filters ul li a {background: none repeat scroll 0 0 #ea9eb6 !important}
+
+.widget.bd-posts-grid .widget-title h2 a,
+.widget.bd-posts-grid .widget-title h2 {
+    color: #FFF;
+}
+
+.sk-circle .sk-child:before {background-color: #FFF !important}
+
+.bdaia-grid-loadmore-btn,
+#bdaia-ralated-posts .bdaia-ralated-posts-head li a {color: #FFF}

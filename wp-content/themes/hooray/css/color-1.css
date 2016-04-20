@@ -1,0 +1,158 @@
+a:hover {
+    color: #A0CE4E
+}
+::selection {
+    background: #A0CE4E
+}
+a.more-link,
+button,
+.btn-link,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: #A0CE4E
+}
+button:active,
+.btn-link:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    background-color: #A0CE4E
+}
+.gotop:hover {
+    background-color: #A0CE4E
+}
+.top-search {
+    background-color: #A0CE4E
+}
+.primary-menu ul#menu-primary > li.current-menu-parent,
+.primary-menu ul#menu-primary > li.current-menu-ancestor,
+.primary-menu ul#menu-primary > li.current-menu-item,
+.primary-menu ul#menu-primary > li.current_page_item {
+    color: #A0CE4E;
+}
+.primary-menu ul#menu-primary > li.current-menu-parent i,
+.primary-menu ul#menu-primary > li.current-menu-ancestor i,
+.primary-menu ul#menu-primary > li.current-menu-item i,
+.primary-menu ul#menu-primary > li.current_page_item i,
+.primary-menu ul#menu-primary > li.current-menu-parent > a,
+.primary-menu ul#menu-primary > li.current-menu-ancestor > a,
+.primary-menu ul#menu-primary > li.current-menu-item > a,
+.primary-menu ul#menu-primary > li.current_page_item > a {
+    color: #A0CE4E;
+}
+.primary-menu ul#menu-primary > li:hover > a {
+    color: #A0CE4E;
+}
+.primary-menu ul#menu-primary li.bd_menu_item ul.sub-menu li:hover > ul.sub-menu,
+.primary-menu ul#menu-primary li.bd_mega_menu:hover > ul.bd_mega.sub-menu,
+.primary-menu ul#menu-primary li.bd_menu_item:hover > ul.sub-menu,
+.primary-menu ul#menu-primary .sub_cats_posts {
+    border-top-color: #A0CE4E;
+}
+div.nav-menu.primary-menu-dark a.menu-trigger:hover i,
+div.nav-menu.primary-menu-light a.menu-trigger:hover i,
+div.nav-menu.primary-menu-light a.menu-trigger.active i,
+div.nav-menu.primary-menu-dark a.menu-trigger.active i {
+    background: #A0CE4E;
+}
+span.bd-criteria-percentage {
+    background: #A0CE4E;
+    color: #A0CE4E;
+}
+.divider-colors {
+    background: #A0CE4E;
+}
+.blog-v1 article .entry-meta a {
+    color: #A0CE4E;
+}
+.blog-v1 article .article-formats {
+    background-color: #A0CE4E;
+}
+.cat-links {
+    background-color: #A0CE4E;
+}
+.pagenavi span.pagenavi-current {
+    border-color: #A0CE4E;
+    background-color: #A0CE4E;
+}
+.pagenavi a:hover {
+    border-color: #A0CE4E;
+    color: #A0CE4E;
+}
+.widget {
+    border-top-color: #A0CE4E;
+}
+.new-box {
+    border-top-color: #A0CE4E;
+}
+.widget a:hover {
+    color: #A0CE4E;
+}
+.tagcloud a:hover {
+    background: #A0CE4E;
+}
+.masonry-more-link,
+.bdaia-cats-more-btn,
+ul.tabs_nav li.active a {
+    color: #A0CE4E;
+}
+.bd-tweets ul.tweet_list li.twitter-item a {
+    color: #A0CE4E;
+}
+.widget.bd-login .login_user .bio-author-desc a {
+    color: #A0CE4E;
+}
+.comment-reply-link,
+.comment-reply-link:link,
+.comment-reply-link:active {
+    color: #A0CE4E;
+}
+.gallery-caption {
+    background-color: #A0CE4E;
+}
+.slider-flex ol.flex-control-paging li a.flex-active {
+    background: #A0CE4E;
+}
+#folio-main ul#filters li a.selected {
+    background: #A0CE4E;
+}
+.search-mobile button.search-button {
+    background: #A0CE4E;
+}
+.gotop {
+    background: #A0CE4E;
+}
+.bdaia-posts-grid-post.format-video .post-image:after,
+.sk-circle .sk-child:before,
+#reading-position-indicator {
+    background: #A0CE4E;
+}
+#bdCheckAlso {
+    border-top-color: #A0CE4E;
+}
+.primary-menu ul#menu-primary > li:hover > a,
+.primary-menu ul#menu-primary > li.current-menu-item > a,
+.primary-menu ul#menu-primary > li.current_page_item > a,
+.primary-menu ul#menu-primary > li.current-menu-parent > a,
+.primary-menu ul#menu-primary > li.current-menu-ancestor > a {
+    background: #A0CE4E;
+}
+.woocommerce .product .onsale,
+.woocommerce .product a.button:hover,
+.woocommerce .product #respond input#submit:hover,
+.woocommerce .checkout input#place_order:hover,
+.woocommerce .woocommerce.widget .button:hover,
+.single-product .product .summary .cart .button:hover,
+.woocommerce-cart .woocommerce table.cart .button:hover,
+.woocommerce-cart .woocommerce .shipping-calculator-form .button:hover,
+.woocommerce .woocommerce-message .button:hover,
+.woocommerce .woocommerce-error .button:hover,
+.woocommerce .woocommerce-info .button:hover,
+.woocommerce-checkout .woocommerce input.button:hover,
+.woocommerce-page .woocommerce a.button:hover,
+.woocommerce-account div.woocommerce .button:hover,
+.woocommerce.widget .ui-slider .ui-slider-handle,
+.woocommerce.widget.widget_layered_nav_filters ul li a {
+    background: none repeat scroll 0 0 #A0CE4E !important
+}

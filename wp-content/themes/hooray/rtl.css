@@ -1,0 +1,72 @@
+﻿@font-face { font-family: 'GE SS'; src: url('fonts/ge-ss-med.eot'); }
+@font-face { font-family: 'GE SS'; src: url(//:) format('no404'), url('fonts/ge-ss-med.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+
+body,
+body a,
+body input,
+body textarea,
+body select,
+body button,
+.logo .site-name,
+.site-tagline,
+.nav-menu,
+.nav-menu .entry-title,
+.blog-v1 article .entry-title,
+.page-title h2,
+.post-sharing-box .title,
+.box-title h2,
+#reply-title,
+ul.tabs_nav li a,
+.box-title h3,
+.widget .widget-title h2,
+.blog-v1 article h1.entry-title,
+.blog-v1 article h1.entry-title a,
+.single .entry-title,
+.single-post .entry-title,
+.blog-v1 article .entry-title,
+#social-counter-widget ul.social-counter-widget li a span,
+.blog-v1 article .entry-meta,
+.blog-v1 article .entry-meta a,
+.entry-content,
+.entry-content a,
+#top-navigation a,
+#top-navigation
+{
+    /*
+    font-family: arial, Georgia, serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+    */
+}
+
+
+.logo .site-name,
+#navigation a,
+#navigation,
+.logo-name,
+.logo-name a,
+.page-title h2,
+.page-title h2 a,
+.page article .entry-title,
+.page-template-default .entry-title,
+.blog-v1 article h1.entry-title,
+.blog-v1 article h1.entry-title a,
+.single .entry-title,
+.single-post .entry-title,
+.blog-v1 article .entry-title,
+.widget .widget-title h2,
+ul.tabs_nav li a,
+.widget-footer-title h3,
+.box-title h2,
+.box-title h2 a,
+.box-title h3, #reply-title,
+.bdayh-insta-title
+{
+    /*
+    font-family: 'GE SS',arial,Georgia, serif;
+    font-style: normal;
+    line-height: normal;
+    font-weight: normal
+    */
+}
