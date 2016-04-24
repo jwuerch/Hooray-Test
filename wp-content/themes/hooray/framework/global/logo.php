@@ -190,37 +190,5 @@ if( !empty($cat_options['logo_displays']) ){
         <?php } ?>
         <?php } ?>
         <?php if( !is_singular() && !is_category() && !is_tag() ) echo '</h1>'; else echo '</h2>'; ?>
-        <?php
-        // Header Ads.
-
-        $customAdsNewTab        = bdayh_get_option('headerAdsNewTab');
-        $customAdsNoFollow      = bdayh_get_option('headerAdsNoFollow');
-        $header_ads_code        = bdayh_get_option( 'header_ads_code' );
-
-        $target = $nofollow = "";
-        if( $customAdsNewTab ) $target='target="_blank"';
-        if( $customAdsNoFollow ) $nofollow='rel="nofollow"';
-
-        if( bdayh_get_option( 'margin_header_adv_top' ) ){
-            $m_adv_top = 'style="margin-top: '. bdayh_get_option( 'margin_header_adv_top' ) .'px"';
-        } else {
-            $m_adv_top ='';
-        }
-
-        if( bdayh_get_option('show_header_ads') ){ ?>
-
-            <div class="bdayh-clearfix"></div>
-            <div class="header-adv">
-
-                <?php if( $header_ads_code != '' ){ ?>
-                    <?php echo do_shortcode( stripslashes( $header_ads_code ) ); ?>
-                <?php } else { ?>
-                    <a href="<?php echo stripcslashes( bdayh_get_option( 'header_ads_img_url' ) ); ?>" title="<?php echo stripcslashes( bdayh_get_option( 'header_ads_img_altname' ) ); ?>" <?php echo $target, $nofollow; ?>><img src="<?php echo stripcslashes( bdayh_get_option( 'header_ads_img' ) ); ?>" alt="<?php echo stripcslashes( bdayh_get_option( 'header_ads_img_altname' ) ); ?>" /></a>
-                <?php } ?>
-            </div>
-            <div class="bdayh-clearfix"></div>
-
-        <?php } ?>
-
     </div><!-- End Logo -->
 <?php } ?>

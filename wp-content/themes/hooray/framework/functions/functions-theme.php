@@ -175,7 +175,7 @@ function bdayhSetup()
         add_theme_support( 'post-thumbnails' );
         set_post_thumbnail_size( 55, 55, true );
         set_post_thumbnail_size( 800, 500, true );
-        set_post_thumbnail_size( 320, 220, true );
+        set_post_thumbnail_size( 245, 168, true );
         set_post_thumbnail_size( 620, 330, true );
         set_post_thumbnail_size( 1000, 600, true );
         set_post_thumbnail_size( 311, 444, true );
@@ -189,7 +189,7 @@ function bdayhSetup()
         add_image_size( 'bd-xlarge', 1000, 600, true );
         add_image_size( 'bd-related', 620, 330, true );
         add_image_size( 'bd-carousel', 311, 444, true );
-        add_image_size( 'bd-related-small', 320, 220, true );
+        add_image_size( 'bd-related-small', 245, 168, true );
         add_image_size( 'bd-gallery-grid', 800, 9999999, true );
     }
 

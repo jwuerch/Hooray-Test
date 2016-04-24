@@ -24,13 +24,6 @@ body
     height: 40px;
     position: relative;
 }
-
-.bdayh-post-Featured {
-    background:#fafafa;
-    padding:20px;
-    min-height:154px;
-    border-bottom:1px solid #ededed;
-}
 .sk-circle .sk-child
 {
     width: 100%;
@@ -325,7 +318,8 @@ body.sticky-nav-on #navigation.sticky-nav .primary-menu ul#menu-primary > li > a
 .primary-menu ul#menu-primary > li.current-menu-parent > a,
 .primary-menu ul#menu-primary > li.current-menu-ancestor > a
 {
-    color:#000;
+    background-color: #ff4020;
+    color: #FFF !important;
 }
 
 .primary-menu ul#menu-primary li ul {
@@ -464,6 +458,7 @@ ul.bd-post-carousel.bd-new a.entry-cover {
     text-align: initial;
 }
 .blog-v1 article .entry-meta {
+    padding: 0 30px;
 }
 
 /**
@@ -492,7 +487,7 @@ article.format-quote .entry-title {
 
 .blog-masonry article h2.entry-title,
 .blog-v1 .blog-masonry article.format-quote h1.entry-title {
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -505,7 +500,7 @@ article.format-quote .entry-title {
 .blog-v1 article.classic1-item h2.entry-title,
 .blog-v1 article.classic1-item.format-quote h1.entry-title,
 article.classic1-item .arti-title {
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -531,20 +526,16 @@ body.page .format-standard h1.entry-title,
 body.page .format-audio h1.entry-title,
 body.page .format-video h1.entry-title,
 body.page .format-gallery h1.entry-title {
-    font-family: 'Open Sans', sans-serif !important;
-    font-weight:600 !important;
-    font-size:26px !important;
-    line-height:40px !important;
-    letter-spacing: -0.52px;
-    padding:0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46px;
     text-transform: none;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #222;
 }
-
-
 
 @media only screen and (max-width: 730px) {
     .slider-flex ul.slides li .slide-caption h3,
@@ -581,7 +572,7 @@ article .entry-content {
 .single article.post .entry h4, .page article.page .entry h4,
 .single article.post .entry h5, .page article.page .entry h5,
 .single article.post .entry h6, .page article.page .entry h6 {
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     text-rendering: auto;
@@ -622,7 +613,7 @@ ul.tabs_nav li a,
 ul.tabs_nav li a,
 .box-title h3,
 .widget .widget-title h2 {
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -632,7 +623,7 @@ ul.tabs_nav li a,
 }
 
 .top-menu-area {
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     line-height: 13px;
     font-weight: 400;
@@ -644,7 +635,7 @@ ul.tabs_nav li a,
 
 .nav-menu,
 .primary-menu ul ul li, .nav-menu .entry-title {
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-transform: none;
@@ -655,7 +646,7 @@ ul.tabs_nav li a,
 
 .bd-post-carousel-item article .bd-meta-info-align h3,
 ul.bd-post-carousel article h3 span {
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     line-height: 27px;
     font-weight: 700;
@@ -671,25 +662,20 @@ ul.bd-post-carousel article h3 span {
 .widget_meta ul li,
 .widget_recent_entries ul li,
 .widget .widget-posts-lists .post-warpper h3 {
-    font-family: Verdana,Geneva,sans-serif;
-    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     line-height: 19px;
     font-weight: 400;
     text-transform: none;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Verdana,Geneva,sans-serif;
 }
 
 .blog-v1 article a.more-link {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-}
-
-#warp > div.bdMain > div.bd-container > div.bd-sidebar.theia_sticky > div.theiaStickySidebar {
-    width:300px !important;
 }
 
 .logo .site-name {
@@ -712,7 +698,7 @@ ul.bd-post-carousel article h3 span {
  * ----------------------------------------------------------------------------- *
  */
 .bd-cat-link {
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -727,9 +713,9 @@ ul.bd-post-carousel article h3 span {
     text-shadow: none !important;
     -moz-text-shadow: none !important;
     -webkit-text-shadow: none !important;
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
 }
 
 
@@ -787,7 +773,7 @@ ul.bd-post-carousel article h3 span {
 
 #big-stories .bdaia-article-container article.post .post-title {
     margin: 8px 0 0 0;
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 19px;
     font-weight: 400;
@@ -985,6 +971,7 @@ ul.bd-post-carousel article h3 span {
 
 
 .post-video-play {
+    background: #ff4020;
     font-size: 18px;
     margin: 0;
     position: absolute;
@@ -1218,7 +1205,7 @@ ul.bd-post-carousel article h3 span {
     -moz-text-shadow: none;
     -webkit-text-shadow: none;
 
-    font-family: Verdana,Geneva,sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 19px;
     font-weight: 400;
@@ -1258,6 +1245,7 @@ ul.bd-post-carousel article h3 span {
 .bdaia-posts-grid-post .bbd-post-cat-content * { line-height: inherit !important; }
 .bdaia-posts-grid-post.format-video .post-image:after
 {
+    background-color: #ff4020;
     border-radius: 50%;
     color: #fff;
     content: "\f04b";
@@ -1518,18 +1506,11 @@ ul.bd-post-carousel article h3 span {
     font-size: 18px;
     font-family: Baskerville, 'NewBaskerville', Times, serif;
     font-style: italic;
+    color: #ff4020;
 }
 
 .masonry-more-link:hover { color: #222 }
 
 div.posts-gird #container-grid {
     margin-bottom: -30px;
-}
-
-.blog-v1 article .entry-meta a:hover {
-    color:#4799da !important;
-}
-.blog-v1 article .entry-meta span {
-    font-family: Verdana,Geneva,sans-serif;
-    color:#222;
 }

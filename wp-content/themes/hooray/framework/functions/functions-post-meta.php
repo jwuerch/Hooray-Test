@@ -22,6 +22,7 @@ function bd_post_meta(){
             if( bdayh_get_option('post_meta_author') ) {
                 ?>
                 <div class="bdayh-post-meta-author">
+                    <?php if(is_single()) echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'MFW_author_bio_avatar_size', 24 ) ); ?>
                     <span><?php _e('By',LANG); ?> <?php the_author_posts_link(); ?></span>
                 </div><!-- .bdayh-post-meta-author /-->
             <?php
@@ -38,6 +39,14 @@ function bd_post_meta(){
             }
 
             // Time.
+            if( bdayh_get_option( 'post_meta_timeread' ) ){
+                ?>
+                <div class="bdayh-post-meta-time-read">
+                    <i class='fa fa-bookmark'></i>
+                    <?php bdayh_post_read_time(); ?>
+                </div>
+            <?php
+            }
 
 
         // Comments
@@ -59,9 +68,10 @@ function bd_post_meta(){
                 if( bdayh_get_option('post_meta_cats') ){
                     ?>
                     <div class="bdayh-post-meta-cat">
+                        <i class='fa fa-files-o'></i>
                         <span class="post_meta_cats">
-                            <?php _e('', LANG); ?>
-                            <span class="category-tag"><?php the_category('</span><span class="category-tag"> '); ?>
+                            <?php _e('In', LANG); ?>
+                            <?php the_category(', '); ?>
                         </span>
                     </div><!-- .bdayh-post-meta-cat /-->
                 <?php
@@ -69,7 +79,22 @@ function bd_post_meta(){
             }
 
             // Views
+            if(bdayh_get_option('post_meta_views')) {
 
+                if(is_singular()){
+                    global $page, $post;
+
+                    echo "<div class='bdayh-post-meta-views'><i class='fa fa-eye'></i><span class='post_meta_views'>\n";
+                        if ($page == 1) setPostViews($post->ID);
+                        echo getPostViews(get_the_ID());
+                    echo "</span></div><!-- .bdayh-post-meta-views /-->\n";
+                }
+                else {
+                    echo "<div class='bdayh-post-meta-views'><i class='fa fa-eye'></i><span class='post_meta_views'>\n";
+                        echo getPostViews(get_the_ID());
+                    echo "</span></div><!-- .bdayh-post-meta-views /-->\n";
+                }
+            }
 
             // Like
             if( is_singular() && bdayh_get_option( 'post_heart_like' ) ) {

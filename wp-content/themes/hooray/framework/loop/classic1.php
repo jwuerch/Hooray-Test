@@ -54,10 +54,10 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
             <?php
             // Thumbs.
             if( bdayh_get_option( 'all_featured_image' ) == 'fea_lightbox' ) {
-                ?><a class="lightbox" href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail($size); ?></a><?php
+                ?><a class="lightbox" href="<?php echo bd_thumb_src( 'full' ); ?>"><?php the_post_thumbnail($size); ?></a><?php
             }
             else if( bdayh_get_option( 'all_featured_image' ) == 'fea_link' ) {
-                ?><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail($size); ?></a><?php
+                ?><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($size); ?></a><?php
             }
             else {
                 the_post_thumbnail($size);
@@ -67,12 +67,18 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
     <?php } ?>
 
     <div class="arti-details">
-        <?php if( bdayh_get_option( 'post_meta_date' ) ) { ?>
-            <div class="post-date">
-                <?php bd_get_time(); ?>
-            </div>
-        <?php } ?>
 
+	    <div class="bdayh-post-header-cat">
+		    <div class="bdayh-post-header-cat-inner">
+			    <?php
+			    // the_category(' ');
+			    foreach( ( get_the_category() ) as $cat )
+			    {
+				    echo '<a class="bd-cat-link bd-cat-'.$cat->cat_ID.'" href="' . get_category_link( $cat->cat_ID ) . '">' . $cat->cat_name . '</a>'."\n";
+			    }
+			    ?>
+		    </div>
+	    </div>
 
         <h3  class="arti-title entry-title">
             <a  href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" title="<?php the_title(); ?>">
@@ -86,38 +92,48 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
             <div class="arti-excerpt">
                 <?php bd_classic1(); ?>
             </div>
-
-    </div><!--. arti-details /-->
         <?php } ?>
 
         <div class="arti-meta-info">
-            <div class="bdayh-post-header-cat">
-                <div class="bdayh-post-header-cat-inner">
-                    <?php
-                    // the_category(' ');
-                    foreach( ( get_the_category() ) as $cat )
-                    {
-                        echo '<a class="bd-cat-link bd-cat-'.$cat->cat_ID.'" href="' . get_category_link( $cat->cat_ID ) . '">' . $cat->cat_name . '</a>'."\n";
-                    }
-                    ?>
-                </div>
-            </div>
-            <div class="flex-container-2">
-                <div class="author-comments-read-time">
 
-                    <?php if( bdayh_get_option( 'post_meta_author' ) ) { ?>
-                        <div class="post-author">
-                            <div class="author-link"><span style="color:#282a2b;font-family:Verdana,Geneva,sans-serif;">By </span><?php the_author_posts_link(); ?></div>
-                        </div>
-                    <?php } ?>
+            <?php if( bdayh_get_option( 'post_meta_author' ) ) { ?>
+                <div class="post-author">
+                    <span><?php the_author_posts_link(); ?></span>
                 </div>
-                <a  href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" title="<?php the_title(); ?>">
-                    <div class="read-more">
-                    <div class="read-more-carrot"><div class="read-more-carrot-center"><span class="read-more-a">></span></div></div>
+            <?php } ?>
+
+            <?php if( bdayh_get_option( 'post_meta_date' ) ) { ?>
+                <div class="post-date">
+                    <i class='fa fa-clock-o'></i>
+                    <?php bd_get_time(); ?>
+                </div>
+            <?php } ?>
+
+            <?php if( bdayh_get_option( 'post_meta_timeread' ) ) { ?>
+                <div class="post-time-read">
+                    <i class='fa fa-bookmark'></i>
+                    <?php bdayh_post_read_time(); ?>
+                </div>
+            <?php } ?>
+
+            <?php
+            // Comments.
+            if( bdayh_get_option( 'post_meta_comments' ) ) {
+                if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+                    ?>
+                    <div class="post-comments">
+                        <i class='fa fa-comments-o'></i>
+                            <span class="comments-link">
+                                <?php comments_popup_link( '0', '1', '% ' ); ?>
+                            </span>
                     </div>
-                </a>
-            </div>
+                <?php
+                }
+            }
+            ?>
 
         </div>
+
+    </div><!--. arti-details /-->
 
 </article>

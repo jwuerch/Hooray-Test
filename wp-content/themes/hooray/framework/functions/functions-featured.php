@@ -136,7 +136,25 @@ function bd_home_img( $size = 'bd-large' )
             }
         }
     }
+    elseif( bd_first_post_image() ) {
 
+        // Set the first image from the editor.
+        if( bdayh_get_option( 'all_featured_image' ) == 'fea_lightbox' ) {
+            echo '<div class="post-image">';
+            echo '<a class="lightbox" href="' . bd_first_post_image() . '"><img  src="' . bd_first_post_image() . '" class="wp-post-image" alt="' . get_the_title() . '" /></a>';
+            echo '</div>';
+        }
+        else if( bdayh_get_option( 'all_featured_image' ) == 'fea_link' ) {
+            echo '<div class="post-image">';
+            echo '<a href="' . get_the_permalink() . '"><img  src="' . bd_first_post_image() . '" class="wp-post-image" alt="' . get_the_title() . '" /></a>';
+            echo '</div>';
+        }
+        else {
+            echo '<div class="post-image">';
+            echo '<img  src="' . bd_first_post_image() . '" class="wp-post-image" alt="' . get_the_title() . '" />';
+            echo '</div>';
+        }
+    }
 }
 
 /**
@@ -147,8 +165,8 @@ function bd_slider_widget_img()
 {
     global $post;
 
-    $fea_h  = '220';
-    $fea_w  = '320';
+    $fea_h  = '168';
+    $fea_w  = '245';
     $size = 'bd-related-small';
 
     $bdSiteSidebarPos           = bdayh_get_option('site_sidebar_position');

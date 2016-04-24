@@ -80,10 +80,6 @@ else {
             <?php get_template_part( 'framework/global/post-meta' ); ?>
         <?php } ?>
         <div class="clear"></div>
-        <?php if( $bdayh_post_title == 'below' ){ ?>
-            <?php get_template_part( 'framework/global/post-title' ); ?>
-            <?php get_template_part( 'framework/global/post-meta' ); ?>
-        <?php } ?>
 
         <?php
         // Post Thumb.
@@ -109,6 +105,10 @@ else {
         ?>
         <div class="clear"></div>
 
+        <?php if( $bdayh_post_title == 'below' ){ ?>
+            <?php get_template_part( 'framework/global/post-title' ); ?>
+            <?php get_template_part( 'framework/global/post-meta' ); ?>
+        <?php } ?>
 
     </div><!-- .bdayh-post-Featured /-->
 
