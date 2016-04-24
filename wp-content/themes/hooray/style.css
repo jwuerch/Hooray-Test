@@ -7745,7 +7745,19 @@ div.post-caption>h3>a {
     background:#4799da;
     transition:.4s;
 }
+.site-main > article > div.arti-details > div.post-date {
+    padding:2px 14px;
+    font-family:Lato,sans-serif;
+    font-weight:700;
+    color:#fff;
+    background:#4799da;
+    font-size:12px;
+    margin-left:0;
+}
 
+.fa-clock-o {
+    display:none;
+}
 .bd-cat-link:hover {
     background: #4799da !important;;
 }

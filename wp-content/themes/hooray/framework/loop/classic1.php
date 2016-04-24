@@ -67,73 +67,79 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
     <?php } ?>
 
     <div class="arti-details">
-
-	    <!-- <div class="bdayh-post-header-cat">
-		    <div class="bdayh-post-header-cat-inner">
-			    <?php
-			    // the_category(' ');
-			    foreach( ( get_the_category() ) as $cat )
-			    {
-				    echo '<a class="bd-cat-link bd-cat-'.$cat->cat_ID.'" href="' . get_category_link( $cat->cat_ID ) . '">' . $cat->cat_name . '</a>'."\n";
-			    }
-			    ?>
-		    </div>
-	    </div> -->
-
-        <h3  class="arti-title entry-title">
-            <a  href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" title="<?php the_title(); ?>">
-                <?php the_title(); ?>
-            </a>
-        </h3>
-
-        <?php
-        // Post Excerpt.
-        if( !$post->post_content=="" ) { ?>
-            <div class="arti-excerpt">
-                <?php bd_classic1(); ?>
-            </div>
-        <?php } ?>
-
-        <div class="arti-meta-info">
-
-            <!-- <?php if( bdayh_get_option( 'post_meta_author' ) ) { ?>
-                <div class="post-author">
-                    <span><?php the_author_posts_link(); ?></span>
-                </div>
-            <?php } ?> -->
-
             <?php if( bdayh_get_option( 'post_meta_date' ) ) { ?>
                 <div class="post-date">
                     <i class='fa fa-clock-o'></i>
                     <?php bd_get_time(); ?>
                 </div>
             <?php } ?>
+        <div class="arti-details-other-info">
+    	    <!-- <div class="bdayh-post-header-cat">
+    		    <div class="bdayh-post-header-cat-inner">
+    			    <?php
+    			    // the_category(' ');
+    			    foreach( ( get_the_category() ) as $cat )
+    			    {
+    				    echo '<a class="bd-cat-link bd-cat-'.$cat->cat_ID.'" href="' . get_category_link( $cat->cat_ID ) . '">' . $cat->cat_name . '</a>'."\n";
+    			    }
+    			    ?>
+    		    </div>
+    	    </div> -->
 
-            <?php if( bdayh_get_option( 'post_meta_timeread' ) ) { ?>
-                <div class="post-time-read">
-                    <i class='fa fa-bookmark'></i>
-                    <?php bdayh_post_read_time(); ?>
+            <h3  class="arti-title entry-title">
+                <a  href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                    <?php the_title(); ?>
+                </a>
+            </h3>
+
+            <?php
+            // Post Excerpt.
+            if( !$post->post_content=="" ) { ?>
+                <div class="arti-excerpt">
+                    <?php bd_classic1(); ?>
                 </div>
             <?php } ?>
 
-            <?php
-            // Comments.
-            if( bdayh_get_option( 'post_meta_comments' ) ) {
-                if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-                    ?>
-                    <div class="post-comments">
-                        <i class='fa fa-comments-o'></i>
-                            <span class="comments-link">
-                                <?php comments_popup_link( '0', '1', '% ' ); ?>
-                            </span>
+            <div class="arti-meta-info">
+
+                <!-- <?php if( bdayh_get_option( 'post_meta_author' ) ) { ?>
+                    <div class="post-author">
+                        <span><?php the_author_posts_link(); ?></span>
                     </div>
+                <?php } ?> -->
+
+                <!-- <?php if( bdayh_get_option( 'post_meta_date' ) ) { ?>
+                    <div class="post-date">
+                        <i class='fa fa-clock-o'></i>
+                        <?php bd_get_time(); ?>
+                    </div>
+                <?php } ?> -->
+
+                <?php if( bdayh_get_option( 'post_meta_timeread' ) ) { ?>
+                    <div class="post-time-read">
+                        <i class='fa fa-bookmark'></i>
+                        <?php bdayh_post_read_time(); ?>
+                    </div>
+                <?php } ?>
+
                 <?php
+                // Comments.
+                if( bdayh_get_option( 'post_meta_comments' ) ) {
+                    if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+                        ?>
+                        <div class="post-comments">
+                            <i class='fa fa-comments-o'></i>
+                                <span class="comments-link">
+                                    <?php comments_popup_link( '0', '1', '% ' ); ?>
+                                </span>
+                        </div>
+                    <?php
+                    }
                 }
-            }
-            ?>
+                ?>
 
+            </div>
         </div>
-
     </div><!--. arti-details /-->
     <div class="arti-box">
         <div class="post-cat-author" style="background:#fafafa;">
@@ -153,7 +159,7 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
             <?php if( bdayh_get_option( 'post_meta_author' ) ) { ?>
                 <div class="post-author" style="margin-right:40px;width:30%;">
                     <div class="post-author-wrap" style="height:50.578px;float:right;">
-                        <div style="position:relative;top:50%;transform:translateY(-50%)"><?php the_author_posts_link(); ?></div>
+                        <div style="position:relative;top:50%;transform:translateY(-50%);font-size:13px;">By <?php the_author_posts_link(); ?></div>
                     </div>
                 </div>
             <?php } ?>
