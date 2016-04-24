@@ -67,12 +67,14 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
     <?php } ?>
 
     <div class="arti-details">
+        <div class="post-date-wrap">
             <?php if( bdayh_get_option( 'post_meta_date' ) ) { ?>
                 <div class="post-date">
                     <i class='fa fa-clock-o'></i>
                     <?php bd_get_time(); ?>
                 </div>
             <?php } ?>
+        </div>
         <div class="arti-details-other-info">
     	    <!-- <div class="bdayh-post-header-cat">
     		    <div class="bdayh-post-header-cat-inner">
@@ -143,7 +145,7 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
     </div><!--. arti-details /-->
     <div class="arti-box">
         <div class="post-cat-author" style="background:#fafafa;">
-            <div class="bdayh-post-header-cat" style="width:70%;padding-left:15px;">
+            <div class="bdayh-post-header-cat" style="padding-left:15px;">
     		    <div class="bdayh-post-header-cat-inner" style="height:50.578px;">
                     <div class="post-cat-wrap" style="position:relative;top:50%;transform:translateY(-50%)">
         			    <?php
