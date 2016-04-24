@@ -68,7 +68,7 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
 
     <div class="arti-details">
 
-	    <div class="bdayh-post-header-cat">
+	    <!-- <div class="bdayh-post-header-cat">
 		    <div class="bdayh-post-header-cat-inner">
 			    <?php
 			    // the_category(' ');
@@ -78,7 +78,7 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
 			    }
 			    ?>
 		    </div>
-	    </div>
+	    </div> -->
 
         <h3  class="arti-title entry-title">
             <a  href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark" title="<?php the_title(); ?>">
@@ -96,11 +96,11 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
 
         <div class="arti-meta-info">
 
-            <?php if( bdayh_get_option( 'post_meta_author' ) ) { ?>
+            <!-- <?php if( bdayh_get_option( 'post_meta_author' ) ) { ?>
                 <div class="post-author">
                     <span><?php the_author_posts_link(); ?></span>
                 </div>
-            <?php } ?>
+            <?php } ?> -->
 
             <?php if( bdayh_get_option( 'post_meta_date' ) ) { ?>
                 <div class="post-date">
@@ -135,5 +135,34 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
         </div>
 
     </div><!--. arti-details /-->
+    <div class="arti-box">
+        <div class="post-cat-author">
+            <div class="bdayh-post-header-cat" style="width:70%;">
+    		    <div class="bdayh-post-header-cat-inner" style="height:50.578px;">
+                    <div class="post-cat-wrap" style="position:relative;top:50%;transform:translateY(-50%)">
+        			    <?php
+        			    // the_category(' ');
+        			    foreach( ( get_the_category() ) as $cat )
+        			    {
+        				    echo '<a class="bd-cat-link bd-cat-'.$cat->cat_ID.'" href="' . get_category_link( $cat->cat_ID ) . '">' . $cat->cat_name . '</a>'."\n";
+        			    }
+        			    ?>
+                    </div>
+    		    </div>
+    	    </div>
+            <?php if( bdayh_get_option( 'post_meta_author' ) ) { ?>
+                <div class="post-author" style="margin-right:40px;width:30%;">
+                    <div class="post-author-wrap" style="height:50.578px;float:right;">
+                        <div style="position:relative;top:50%;transform:translateY(-50%)"><?php the_author_posts_link(); ?></div>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+        <div class="arti-go">
+            <div class="arti-go-wrap" style="height:50.578px;text-align:center;">
+                <div class="arti-go-a" style="position:relative;top:50%;transform:translateY(-50%)"><a href="<?php the_permalink(); ?>">></a></div>
+            </div>
+        </div>
+    </div>
 
 </article>

@@ -7719,6 +7719,22 @@ div.post-caption>h3>a {
 .like_box_footer {
     margin-top:-1px;
 }
+.arti-details {
+    min-height:168px !important;
+}
+.arti-go {
+    width:47.19px;
+    float:right;
+}
+.arti-box {
+    width:100%;
+    height:50.578px;
+    display:flex;
+}
+.post-cat-author {
+    flex-grow:2;
+    display:flex;
+}
 @media screen and (max-width:985px) {
     .nav-menu {
         background:#fff;
