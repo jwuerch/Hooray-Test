@@ -7552,7 +7552,7 @@ body.sticky-nav-on #navigation.sticky-nav #reading-position-indicator {
     }
 }
 .bd-container {
-    max-width:1048px;
+    max-width:1058px;
 }
 
 .header .logo {
@@ -7594,8 +7594,12 @@ article.classic1-item .arti-details {
     margin-top: 15px !important;
 }
 
-.theiaStickySidebar {
+.bd-sidebar {
     width:300px;
+}
+
+article.classic1-item, .widget {
+    box-shadow:0 1px 4px 0 rgba(17,17,17,.37)!important;
 }
 
 @media screen and (max-width:985px) {
