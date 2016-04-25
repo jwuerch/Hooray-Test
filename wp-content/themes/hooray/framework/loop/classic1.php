@@ -66,7 +66,7 @@ if( ! has_post_thumbnail() )  $no_thumb = " no-thumb";
         </div><!-- .arti-thumb /-->
     <?php } ?>
 
-    <div class="arti-details">
+    <div class="arti-details" style="max-height:168px !important;">
         <div class="post-date-wrap">
             <?php if( bdayh_get_option( 'post_meta_date' ) ) { ?>
                 <div class="post-date">
